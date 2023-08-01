@@ -18,11 +18,15 @@ public class PlayerController : MonoBehaviour, IDragHandler, IBeginDragHandler, 
     private Vector2 beginPos;
     private Vector2 dragPos;
     private float r;
-    private Animation anim;
+    // 1 private Animation anim;
+    public Animator animator; // Reference to the Animator component
+    private bool isWalking = false; // Flag to track walking state
+   
 
     private void Start()
     {
-        anim = player.GetComponent<Animation>();
+       // 1 anim = player.GetComponent<Animation>();
+       animator = player.GetComponent<Animator>();
 
         transform.gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(Screen.height * 0.5f, Screen.height * 0.5f);
         background.sizeDelta = new Vector2(Screen.height, Screen.height) * 0.25f;
@@ -47,6 +51,17 @@ public class PlayerController : MonoBehaviour, IDragHandler, IBeginDragHandler, 
         r = background.sizeDelta.x / 2;
 
     }
+    private void Update()
+    {
+        if (isWalking)
+        {
+            // Reset the StopWalking trigger if the walking animation is not playing
+            if (animator)
+            {
+                animator.ResetTrigger("StopWalking");
+            }
+        }
+    }
 
     private void FixedUpdate()
     {
@@ -59,18 +74,38 @@ public class PlayerController : MonoBehaviour, IDragHandler, IBeginDragHandler, 
             playerCC.transform.eulerAngles = new Vector3(0, cameraTransform.eulerAngles.y + angle, 0);
             playerCC.Move(player.forward * Time.deltaTime * moveSpeed);
 
-            if (anim)//your ainmation set
+           // 1 if (anim)//your ainmation set
+           // {
+           //     anim.CrossFade("forward");
+           // }
+
+           if (!isWalking)
             {
-                anim.CrossFade("forward");
+                // Set the StartWalking trigger to start walking animation
+                if (animator)
+                {
+                    animator.SetTrigger("StartWalking");
+                }
+                isWalking = true;
             }
         }
         else // joystick stop
         {
 
 
-            if (anim)//your ainmation set
+            // 1 if (anim)//your ainmation set
+            // {
+            //     anim.CrossFade("standing");
+            // }
+
+            if (isWalking)
             {
-                anim.CrossFade("standing");
+                // Set the StopWalking trigger to stop walking animation
+                if (animator)
+                {
+                    animator.SetTrigger("StopWalking");
+                }
+                isWalking = false;
             }
         }
 

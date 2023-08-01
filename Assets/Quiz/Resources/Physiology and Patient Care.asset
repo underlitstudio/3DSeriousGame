@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f611d797432e3f846885b2b12fde5f35, type: 3}
+  m_Name: Physiology and Patient Care
+  m_EditorClassIdentifier: 
+  categoryName: Physiology and Patient Care
+  questions:
+  - questionInfo: Describe the concept of "Kt/V" in dialysis and its significance
+      in assessing dialysis adequacy.
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - Kt/V is the measure of potassium levels in the blood after dialysis.
+    - Kt/V is the ratio of blood flow to dialysate flow during hemodialysis.
+    - Kt/V is the clearance of urea during dialysis and is used to assess the effectiveness
+      of dialysis in removing waste products.
+    - Kt/V is the volume of fluid removed from the body during peritoneal dialysis.
+    correctAns: Kt/V is the clearance of urea during dialysis and is used to assess
+      the effectiveness of dialysis in removing waste products.
+  - questionInfo: How does renal osteodystrophy develop in patients undergoing long-term
+      dialysis, and what interventions can be taken to prevent or manage it?
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - Renal osteodystrophy is caused by excessive fluid removal during dialysis.
+      It can be managed with vitamin D supplementation.
+    - Renal osteodystrophy results from excessive potassium levels in the blood.
+      It can be prevented by avoiding high-potassium foods.
+    - Renal osteodystrophy is caused by inadequate phosphate removal during dialysis.
+      It can be managed with phosphate binders and vitamin D supplementation.
+    - Renal osteodystrophy is a congenital condition and cannot be prevented or managed
+      through dialysis interventions.
+    correctAns: Renal osteodystrophy is caused by excessive fluid removal during
+      dialysis. It can be managed with vitamin D supplementation.
+  - questionInfo: What is the purpose of administering erythropoiesis-stimulating
+      agents (ESA) to dialysis patients, and what are the key considerations in their
+      use?
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - ESA stimulates urine production and improves kidney function.
+    - ESA is used to control blood pressure during dialysis.
+    - ESA stimulates red blood cell production and helps manage anemia in dialysis
+      patients.
+    - ESA is administered to prevent catheter-related infections.
+    correctAns: ESA stimulates red blood cell production and helps manage anemia
+      in dialysis patients.
+  - questionInfo: How do dietary restrictions differ between patients on hemodialysis
+      and peritoneal dialysis, and why are these restrictions important?
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - Patients on peritoneal dialysis need to limit fluid intake, while patients
+      on hemodialysis need to restrict protein intake. These restrictions help maintain
+      fluid balance and prevent protein loss.
+    - Patients on hemodialysis need to restrict fluid intake, while patients on peritoneal
+      dialysis need to limit potassium intake
+    - Both patients on hemodialysis and peritoneal dialysis need to avoid high-phosphate
+    - Both patients on hemodialysis and peritoneal dialysis need to avoid high-phosphate
+    correctAns: Patients on peritoneal dialysis need to limit fluid intake, while
+      patients on hemodialysis need to restrict protein intake. These restrictions
+      help maintain fluid balance and prevent protein loss.
+  - questionInfo: In the context of dialysis, what are "vascular access" complications,
+      and how can they be prevented?
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - Vascular access complications refer to difficulties in obtaining a blood sample
+      for laboratory tests. They can be prevented by using specialized needles.
+    - Vascular access complications are problems related to the catheter placement
+      in the peritoneal cavity. They can be prevented by regular catheter flushes.
+    - Vascular access complications involve issues with the access site
+    - ' Vascular access complications are related to the use of high flow rates during
+      peritoneal dialysis, and they can be prevented by adjusting the dialysate flow.'
+    correctAns: Vascular access complications involve issues with the access site

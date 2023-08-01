@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f611d797432e3f846885b2b12fde5f35, type: 3}
+  m_Name: Equipment and Procedures
+  m_EditorClassIdentifier: 
+  categoryName: Equipment and Procedures
+  questions:
+  - questionInfo: Describe the components of a hemodialysis machine and their functions
+      during the dialysis process.
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - Blood pump, dialysate compartment, and waste container
+    - Dialyzer, peristaltic pump, and blood pressure cuff
+    - Blood reservoir, thermometer, and glucose monitor
+    - Ultrafilter, IV infusion set, and oxygen concentrator
+    correctAns: Blood pump, dialysate compartment, and waste container
+  - questionInfo: During hemodialysis, what is the purpose of the dialyzer (artificial
+      kidney), and how does it work?
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - It regulates blood pressure during dialysis.
+    - It monitors blood glucose levels during dialysis.
+    - It filters and cleanses the blood by diffusion and ultrafiltration.
+    - It removes excess electrolytes using an electric pump.
+    correctAns: It filters and cleanses the blood by diffusion and ultrafiltration.
+  - questionInfo: Explain the steps involved in preparing and connecting a patient
+      to the hemodialysis machine.
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - Clean the patient's access site, connect bloodlines to the dialyzer, and start
+      the machine.
+    - Administer anesthesia, connect the catheter, and initiate the dialysate flow.
+    - Check the patient's blood sugar levels, connect the oxygen supply, and start
+      the pump.
+    - Apply a cooling blanket, insert the peritoneal catheter, and flush the peritoneal
+      cavity.
+    correctAns: Clean the patient's access site, connect bloodlines to the dialyzer,
+      and start the machine.
+  - questionInfo: In peritoneal dialysis, what is the role of the peritoneal catheter,
+      and how is it inserted into the patient?
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - The catheter delivers the dialysis solution into the bladder through the urethra.
+    - The catheter allows access to the bloodstream through an arteriovenous fistula.
+    - The catheter is surgically inserted into the peritoneal cavity to deliver and
+      drain the dialysis solution.
+    - The catheter is placed into the intestines to facilitate nutrient absorption
+      during dialysis.
+    correctAns: The catheter is surgically inserted into the peritoneal cavity to
+      deliver and drain the dialysis solution.
+  - questionInfo: Differentiate between single-needle and double-needle hemodialysis
+      techniques. What are the advantages and disadvantages of each method?
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - Single-needle technique requires less blood flow but is more time-consuming,
+      while double-needle technique allows higher blood flow rates but requires more
+      vascular access.
+    - Single-needle technique is preferred for patients with high blood pressure,
+      while double-needle technique is suitable for patients with diabetes.
+    - Single-needle technique is used for in-center hemodialysis, while double-needle
+      technique is used for home hemodialysis.
+    - Single-needle technique uses a catheter for access, while double-needle technique
+      uses an arteriovenous graft.
+    correctAns: Single-needle technique requires less blood flow but is more time-consuming,
+      while double-needle technique allows higher blood flow rates but requires more
+      vascular access.

@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f611d797432e3f846885b2b12fde5f35, type: 3}
+  m_Name: Dialysis Basics
+  m_EditorClassIdentifier: 
+  categoryName: Dialysis Basics
+  questions:
+  - questionInfo: What is the primary function of dialysis in patients with kidney
+      failure?
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - To prevent diabetes
+    - To restore kidney function
+    - To regulate blood pressure
+    - To filter and remove waste products from the blood
+    correctAns: To filter and remove waste products from the blood
+  - questionInfo: 'Name the two main types of dialysis used for patients: hemodialysis
+      and peritoneal dialysis. What is the primary difference between the two?'
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - Hemodialysis uses a catheter, and peritoneal dialysis uses an AV fistula.
+    - Hemodialysis is done at home, and peritoneal dialysis is done in a dialysis
+      center.
+    - Hemodialysis filters blood outside the body, and peritoneal dialysis filters
+      blood inside the body.
+    - Hemodialysis is more expensive than peritoneal dialysis.
+    correctAns: Hemodialysis filters blood outside the body, and peritoneal dialysis
+      filters blood inside the body.
+  - questionInfo: Define the term "ultrafiltration" in the context of dialysis.
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - The process of removing excess electrolytes during dialysis
+    - The use of a high concentration of dialysate in peritoneal dialysis
+    - The movement of water and small solutes across a semipermeable membrane during
+      dialysis
+    - The addition of drugs to the dialysis solution to treat infections.
+    correctAns: The movement of water and small solutes across a semipermeable membrane
+      during dialysis
+  - questionInfo: What are the common indications for initiating dialysis in a patient
+      with end-stage renal disease (ESRD)?
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - Mild fatigue and occasional edema
+    - Severe acute kidney injury
+    - GFR (Glomerular Filtration Rate) > 60 ml/min
+    - GFR < 15 ml/min or symptoms of uremia
+    correctAns: GFR < 15 ml/min or symptoms of uremia
+  - questionInfo: What are some potential complications that patients may experience
+      during dialysis sessions?
+    questionType: 0
+    questionImage: {fileID: 0}
+    audioClip: {fileID: 0}
+    videoClip: {fileID: 0}
+    options:
+    - Increased blood pressure and kidney stones
+    - Improved appetite and weight gain
+    - Infections at the catheter exit site and low blood sugar levels
+    - Muscle cramps, hypotension, and disequilibrium syndrome
+    correctAns: Muscle cramps, hypotension, and disequilibrium syndrome
