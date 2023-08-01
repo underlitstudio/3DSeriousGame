@@ -1,5 +1,8 @@
 import mongoose from "mongoose";
+
 const { Schema, model } = mongoose;
+
+import questionSchema from "./question.js";
 
 const userSchema = new Schema(
   {
@@ -37,6 +40,9 @@ const userSchema = new Schema(
       type: Date,
       default: null,
     },
+    question1: questionSchema,
+    question2: questionSchema,
+    question3: questionSchema,
   },
   {
     timestamps: true,

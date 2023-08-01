@@ -9,6 +9,8 @@ import {
   sendRecoveryCode,
   updatePassword,
   verifyRecoveryCode,
+  postQuestion,
+  readQuestions,
 } from "../controllers/user.js";
 
 const router = express.Router();
@@ -29,6 +31,8 @@ router.route("/signup").post(signup);
 router.route("/sendRecoveryCode").post(sendRecoveryCode);
 router.route("/verifyRecoveryCode").post(verifyRecoveryCode);
 router.route("/updatePassword").post(updatePassword);
+router.route("/postQuestion").post(postQuestion);
+router.route("/readQuestions").get(readQuestions);
 
 //router.put("/getUserCurrency", getUserCurrency);
 // router

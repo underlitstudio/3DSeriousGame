@@ -285,3 +285,69 @@ export async function updatePassword(req, res) {
     return res.status(500).send("Internal Server Error");
   }
 }
+
+//================================================================
+export async function readQuestions(req, res) {
+  try {
+    const token = req.headers.authorization.split(" ")[1];
+    const decodedToken = jwt.verify(token, process.env.TOKENSECRET);
+    const isAdmin = decodedToken.isAdmin;
+
+    if (!isAdmin) {
+      return res
+        .status(403)
+        .send("Access denied. This route is for admins only.");
+    }
+
+    // Find all users and get their questions
+    const users = await User.find({});
+
+    const userQuestions = users.map((user) => ({
+      username: user.username,
+      question1: user.question1,
+      question2: user.question2,
+      question3: user.question3,
+    }));
+
+    return res.status(200).send(userQuestions);
+  } catch (error) {
+    console.log(error);
+    return res.status(500).send("Internal Server Error");
+  }
+}
+
+export async function postQuestion(req, res) {
+  try {
+    const token = req.headers.authorization.split(" ")[1];
+    const decodedToken = jwt.verify(token, process.env.TOKENSECRET);
+    const userId = decodedToken.userId;
+
+    const user = await User.findById(userId);
+    if (!user) {
+      return res.status(404).send("User not found");
+    }
+
+    const { type, time, attempts } = req.body;
+
+    if (![1, 2, 3].includes(type)) {
+      return res
+        .status(400)
+        .send(
+          "Invalid question number. Please provide a valid question number (1, 2, or 3)."
+        );
+    }
+
+    const questionField = `question${type}`;
+    user[questionField] = {
+      time,
+      attempts,
+    };
+
+    await user.save();
+
+    return res.status(200).send(`Question ${type} posted successfully`);
+  } catch (error) {
+    console.log(error);
+    return res.status(500).send("Internal Server Error");
+  }
+}
