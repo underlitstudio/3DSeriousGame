@@ -8,6 +8,7 @@ using System;
 public class QuestionBehavior : MonoBehaviour
 {
     //public TMP_Text questionTextPanel;
+    public GameObject pannel;
     public TMP_Text[] questionTextPanels;
     public TMP_Text responseTextPanel;
     public Button[] questionButtons;
@@ -27,6 +28,7 @@ public class QuestionBehavior : MonoBehaviour
 
     private void OnQuestionButtonClicked(int questionIndex)
     {
+        pannel.SetActive(true);
         if (questionIndex < qnaCollection.qnaPairs.Count)
         {
             QnAScriptableObject.QnAPair selectedQnA = qnaCollection.qnaPairs[questionIndex];

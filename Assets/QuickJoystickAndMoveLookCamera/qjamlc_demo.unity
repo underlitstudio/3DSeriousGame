@@ -4701,6 +4701,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364752613}
   m_Mesh: {fileID: -5631216799803998671, guid: 4dd0800a62c39884ea2f2f0a855c437e, type: 3}
+--- !u!1 &368733496
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 368733497}
+  m_Layer: 0
+  m_Name: QnaActivation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &368733497
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368733496}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1252.1732, y: 447.13306, z: -16.08191}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &371065530
 GameObject:
   m_ObjectHideFlags: 0
@@ -5540,7 +5571,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &479078047
 MonoBehaviour:
@@ -9320,17 +9351,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1518860194}
-        m_TargetAssemblyTypeName: InformationButton, Assembly-CSharp
-        m_MethodName: ShowInformationScreen
-        m_Mode: 1
+      - m_Target: {fileID: 1651459734}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &802719765
 MonoBehaviour:
@@ -12576,6 +12607,60 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1032528495}
   m_Mesh: {fileID: -8023163712339372150, guid: 4dd0800a62c39884ea2f2f0a855c437e, type: 3}
+--- !u!1 &1047161928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1047161930}
+  - component: {fileID: 1047161929}
+  m_Layer: 0
+  m_Name: QuestionResponseManager (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1047161929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047161928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e61e51bceb3d6cd498749d6750d33785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pannel: {fileID: 1146893169}
+  questionTextPanels: []
+  responseTextPanel: {fileID: 1587084579}
+  questionButtons:
+  - {fileID: 1123195536}
+  - {fileID: 2105943512}
+  - {fileID: 288199642}
+  - {fileID: 655109008}
+  - {fileID: 913919400}
+  qnaCollection: {fileID: 11400000, guid: 153cd3d7add014c4fbf583de28d62cab, type: 2}
+--- !u!4 &1047161930
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047161928}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1614.498, y: 395.24866, z: 789.8613}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1049157802
 GameObject:
   m_ObjectHideFlags: 0
@@ -13715,7 +13800,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1146893170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13883,17 +13968,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1518860194}
-        m_TargetAssemblyTypeName: InformationButton, Assembly-CSharp
-        m_MethodName: ShowInformationScreen
-        m_Mode: 1
+      - m_Target: {fileID: 1651459734}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1158374831
 MonoBehaviour:
@@ -15132,7 +15217,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1267823171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16534,17 +16619,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1518860194}
-        m_TargetAssemblyTypeName: InformationButton, Assembly-CSharp
-        m_MethodName: ShowInformationScreen
-        m_Mode: 1
+      - m_Target: {fileID: 1267823170}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1390744246
 MonoBehaviour:
@@ -16566,7 +16651,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7f03cfff169c989488f7b4efa6969661, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c3a6966356f568c479a86392dd9f703f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17850,7 +17935,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1518860194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17863,7 +17948,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f2621bae332bf84591c6eafecc92f8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  informationScreenCanvas: {fileID: 1651459734}
 --- !u!4 &1518860195
 Transform:
   m_ObjectHideFlags: 0
@@ -19449,6 +19533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e61e51bceb3d6cd498749d6750d33785, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pannel: {fileID: 1146893169}
   questionTextPanels: []
   responseTextPanel: {fileID: 1587084579}
   questionButtons:
@@ -21054,17 +21139,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1518860194}
-        m_TargetAssemblyTypeName: InformationButton, Assembly-CSharp
-        m_MethodName: ShowInformationScreen
-        m_Mode: 1
+      - m_Target: {fileID: 1651459734}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1718248868
 MonoBehaviour:
@@ -22079,7 +22164,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1805448775
 MonoBehaviour:
@@ -22742,17 +22827,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2800000, guid: 7f03cfff169c989488f7b4efa6969661, type: 3}
-        m_TargetAssemblyTypeName: test, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1267823170}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1896055262
 MonoBehaviour:
@@ -22774,7 +22859,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7f03cfff169c989488f7b4efa6969661, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c3a6966356f568c479a86392dd9f703f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -24365,17 +24450,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: test, Assembly-CSharp
-        m_MethodName: log
-        m_Mode: 1
+      - m_Target: {fileID: 1267823170}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &2034643709
 MonoBehaviour:
@@ -24397,7 +24482,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7f03cfff169c989488f7b4efa6969661, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c3a6966356f568c479a86392dd9f703f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -24878,6 +24963,60 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2064324698}
   m_Mesh: {fileID: -4154931223360442249, guid: 4dd0800a62c39884ea2f2f0a855c437e, type: 3}
+--- !u!1 &2079870216
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2079870218}
+  - component: {fileID: 2079870217}
+  m_Layer: 0
+  m_Name: QuestionResponseManager (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2079870217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079870216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e61e51bceb3d6cd498749d6750d33785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pannel: {fileID: 1146893169}
+  questionTextPanels: []
+  responseTextPanel: {fileID: 1587084579}
+  questionButtons:
+  - {fileID: 1123195536}
+  - {fileID: 2105943512}
+  - {fileID: 288199642}
+  - {fileID: 655109008}
+  - {fileID: 913919400}
+  qnaCollection: {fileID: 11400000, guid: 56b2b399afa28774da6de5f066d5aa11, type: 2}
+--- !u!4 &2079870218
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079870216}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1614.498, y: 395.24866, z: 789.8613}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2095182393
 GameObject:
   m_ObjectHideFlags: 0
@@ -25672,7 +25811,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2120351822
 MonoBehaviour:
@@ -27192,4 +27331,7 @@ SceneRoots:
   - {fileID: 1049157806}
   - {fileID: 813318935}
   - {fileID: 1518860195}
+  - {fileID: 368733497}
   - {fileID: 1591316052}
+  - {fileID: 2079870218}
+  - {fileID: 1047161930}
