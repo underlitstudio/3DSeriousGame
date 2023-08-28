@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Drag & Drop/Drag&DropTask.unity
     guid: 1a1cc747e94f6b0498b667be0409f1b6
+  - enabled: 1
+    path: Assets/QuickJoystickAndMoveLookCamera/processScene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects: {}

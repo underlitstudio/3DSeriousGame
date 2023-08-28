@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class CallController : MonoBehaviour
 {
@@ -39,6 +40,7 @@ public class CallController : MonoBehaviour
             {
                 Debug.Log("You have accepted three response groups.");
                 StoreAcceptedResponses();
+                SceneManager.LoadScene("processScene");
             }
             else
             {
